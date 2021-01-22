@@ -5,13 +5,11 @@
 function kilometerToMeter(numberInKilometer) {
     // special case one
     if (typeof numberInKilometer != "number") {
-        console.log("Wrong type of input. Number type input expected for distance. Returning 0 as result");
-        return 0;
+        return "Wrong type of input. Number type input expected for distance.";
     }
     // special case two
     else if (numberInKilometer < 0) {
-        console.log("Distance can not be negative.","Returning 0 kilometer as result");
-        return 0;
+        return "Distance can not be negative.";
     }
     const numberInMeter = numberInKilometer * 1000;
     return numberInMeter;
@@ -22,13 +20,11 @@ function kilometerToMeter(numberInKilometer) {
 function budgetCalculator(numberOfWatch, numberOfMobile, numberOfLaptop) {
     // special case one
     if (typeof numberOfWatch != "number" || typeof numberOfMobile != "number" || typeof numberOfLaptop != "number") {
-        console.log("Number type input expected. Returning 0 as result");
-        return 0;
+        return "Number type input expected.";
     }
     // special case two
     else if (numberOfWatch < 0 || numberOfMobile < 0 || numberOfLaptop < 0) {
-        console.log("Expected Positive input. Returning 0 as result");
-        return 0;
+        return "Expected Positive input.";
     }
     let totalBudget = numberOfWatch * 50 + numberOfMobile * 100 + numberOfLaptop * 500;
     return totalBudget;
@@ -39,13 +35,11 @@ function budgetCalculator(numberOfWatch, numberOfMobile, numberOfLaptop) {
 function hotelCost(numberOfLivingDays) {
     // special case one
     if (typeof numberOfLivingDays != "number") {
-        console.log("Number type input expected. Returning 0 as result");
-        return 0;
+        return "Number type input expected.";
     }
     //special case two
     else if (numberOfLivingDays < 0) {
-        console.log("Wrong input. Please enter positive number. Returning 0 as result");
-        return 0;
+        return "Wrong input. Please enter positive number.";
     }
     let totalCost = 0;
     if (numberOfLivingDays <= 10) {
